@@ -16,7 +16,7 @@ ACCESS_LOG=$1
 #############
 # FUNCTIONS
 function checkParams(){
-	if [ $# -eq 0 ]; then
+	if [ ! $# -eq 1 ]; then
 		usage;
 		exit 1
 	fi
